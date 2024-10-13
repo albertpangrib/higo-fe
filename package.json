@@ -1,0 +1,52 @@
+{
+  "name": "albert",
+  "version": "1.1.0",
+  "description": "Albert Lukas Talupan Pangaribuan-Technical Test Recruitment Higo",
+  "license": "MIT",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "6.0.0",
+    "@nextui-org/react": "^2.4.8",
+    "@popperjs/core": "2.11.7",
+    "@tailwindcss/forms": "0.5.3",
+    "axios": "^1.7.7",
+    "chart.js": "2.9.4",
+    "gulp": "4.0.2",
+    "gulp-append-prepend": "1.0.9",
+    "next": "13.4.6",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-router-dom": "^6.26.2",
+    "react-scripts": "5.0.1",
+    "tailwindcss": "3.3.2"
+  },
+  "scripts": {
+    "start": "next start",
+    "build": "next build",
+    "dev": "next dev",
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm run build:tailwind && npm run dev",
+    "build:tailwind": "tailwind build styles/index.css -o styles/tailwind.css"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "optionalDependencies": {
+    "typescript": "4.9.5"
+  },
+  "devDependencies": {
+    "@types/chart.js": "^2.9.41",
+    "autoprefixer": "10.4.14",
+    "postcss": "8.4.22"
+  }
+}
